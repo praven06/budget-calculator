@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Budget Allocation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Allocation</h1>
+        <div>
+            <label for="totalBudget">Total Budget for the Week (INR):</label>
+            <input type="number" id="totalBudget" placeholder="Enter total budget">
+        </div>
+        <div>
+            <label for="numCategories">Number of Categories:</label>
+            <input type="number" id="numCategories" placeholder="Enter the number of categories">
+        </div>
+        <div id="categoryInputs"></div>
+        <button onclick="generateCategoryInputs()">Generate Category Inputs</button>
+        <button onclick="calculateAllocation()">Calculate Allocation</button>
+        <div id="allocationResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
